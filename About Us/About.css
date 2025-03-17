@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+   
+}
+body{
+    background:url(car.jpg);
+    background-size: cover;
+}
+.main{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo{
+    color:blueviolet;
+    font-size: 60px;
+    font-family: Engravers MT;
+    padding-left: 0px;
+    float: left;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;  
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    font-weight: bolder;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color: blue;
+}
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid blue;
+    margin-top: 13px;
+    color: white;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.btn {
+    width: 100px;
+    height: 40px;
+    background: blue;
+    border: 2px solid white;
+    margin-top: 13px;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.btn:focus{
+    outline: none;
+}
+.srcs:focus{
+    outline: none;
+}
+.heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+    padding: 50px;
+}
+.heading h1{
+    font-size: 50px;
+    font-family: Times New Roman;
+    color:blue;
+    margin-bottom: 25px;
+    position: relative;
+}
+.heading h1:after{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:4px;
+    display:block;
+    margin:0 auto;
+    background-color: blue;
+
+}
+.heading p{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 50px;
+    
+}
+.container{
+    width:90%;
+    margin:0 auto;
+    padding:10px 20px;
+}
+.about{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-image{
+    flex:1;
+    margin-right: 0px;
+    overflow: hidden;
+    margin-top: -150px;
+    margin-right: 100px;
+    
+
+}
+.about-image img{
+    max-width:  90%;
+    height:auto;
+    display:block;
+    transition:0.5s ease;
+    padding-top: 50px;
+}
+.about-image:hover img{
+    transform: scale(1.2);
+}
+.about-content{
+    flex:1;
+    padding: 5px;
+}
+
+.about-content h2{
+    font-size: 23px;
+    margin-bottom:15px;
+    color:black;
+
+}
+.about-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color:white;
+}
+
+.about-content .read-more{
+    display:inline-block;
+    padding:10px 20px;
+    background-color: #4caf50;
+    color:#fff;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+.about-image:hover img{
+    transform: scale(1.2);
+    margin-bottom: 15px;
+    color:#333;
+}
+.about-content .read-more:hover{
+    background-color: #3e8e41;
+}
+@media screen and (max-width:768px){
+    .heading{
+        padding:0px 20px;
+    }
+    .heading h1{
+        font-size: 36px;
+    }
+    .heading p{
+        font-size:17px;
+        margin-bottom: 0px;
+
+    }
+    .container{
+        padding:0px;
+
+    }
+    .about{
+        padding:20px;
+        flex-direction: column;
+    }
+    .about-image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+
+    }
+    .about-content p{
+        padding:0px;
+        font-size: 16px;
+    }
+    .about-content .read-more{
+        font-size: 16px;
+    }
+}
+
+       
